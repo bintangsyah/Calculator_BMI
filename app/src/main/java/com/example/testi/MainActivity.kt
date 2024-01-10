@@ -17,6 +17,8 @@ class MainActivity : ComponentActivity() {
         setContentView(R.layout.activity_main)
 
         // Inisialisasi widget
+        val nama = findViewById<EditText>(R.id.nama)
+        val alamat = findViewById<EditText>(R.id.alamat)
         val buttonCalculate = findViewById<Button>(R.id.buttonCalculate)
         val editTextHeight = findViewById<EditText>(R.id.editTextHeight)
         val editTextWeight = findViewById<EditText>(R.id.editTextWeight)
@@ -24,7 +26,8 @@ class MainActivity : ComponentActivity() {
         val radioGroupGender = findViewById<RadioGroup>(R.id.radioGroupGender)
 
         buttonCalculate.setOnClickListener {
-            calculateBMI(editTextHeight, editTextWeight, radioGroupGender, textViewResult)
+           val bmi = calculateBMI(editTextHeight, editTextWeight, radioGroupGender, textViewResult)
+            textViewResult.text = "Name: ${nama.text}\nAlamat: ${alamat.text}\n$bmi"
         }
     }
 
