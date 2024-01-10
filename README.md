@@ -1,1 +1,2 @@
-![Screenshot (2378)](https://github.com/bintangsyah/Calculator_BMI/assets/109029241/0fe463b6-fd57-4340-93e1-7e30895a751b)
+
+![Screenshot (2390)](https://github.com/bintangsyah/Calculator_BMI/assets/109029241/a6ad7a2f-4a8d-4067-ac40-d63a7b562567)
